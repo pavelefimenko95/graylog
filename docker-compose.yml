@@ -55,6 +55,7 @@ services:
     volumes:
       - "graylog_data:/usr/share/graylog/data/data"
       - "graylog_journal:/usr/share/graylog/data/journal"
+      - "/root/projects/graylog/graylog-credentials:/usr/share/graylog-credentials"
     restart: "on-failure"
 volumes:
   mongodb_data:
